@@ -48,6 +48,12 @@ class _MainPageState extends State<MainPage> {
       case 0:
         return HomePage(); 
         break;
+      case 1:
+        return Center(child: Text("我的音乐"),);
+      case 2:
+        return Center(child: Text("我的朋友"),);
+      case 3:
+        return Center(child: Text("我的账号"),);
       default:
         return Container(width: 100, height: 100, color: Colors.blue,);
     }

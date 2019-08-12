@@ -81,20 +81,30 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       appBar: AppBar(
         leading: Icon(Icons.mic),
         actions: <Widget>[
-          Icon(Icons.list)
+          IconButton(icon: Icon(Icons.list), onPressed: (){
+          },),
+          SizedBox(width: 20,)
         ],
         title: Container(
-          height: 60,
+          height: 30,
+          // width: 50,
           // color: Colors.white,
           child: TextField(
             controller: editingController,
             decoration: InputDecoration(
+              filled: true,
               fillColor: Colors.white,
-              hintText: "search here",
+              // hintText: "search here",
               border: OutlineInputBorder(
+                borderSide: BorderSide(
+                  color: Colors.white
+                ),
                 borderRadius: BorderRadius.all(Radius.circular(25))
               ),
               focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(
+                  color: Colors.white
+                ),
                 borderRadius: BorderRadius.all(Radius.circular(25))
               )
             ),
@@ -132,8 +142,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           children: <Widget>[
             // Text("tab1"),
             buildTabMusic(),
-            Text("tab2"),
-            Text("tab3"),
+            Center(child: Text("视频 Tab")),
+            Center(child: Text("电台 Tab")),
           ],
         ),
       ),
@@ -304,7 +314,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           }).toList(),
         ),
 
-        SizedBox(height: 10,),
+        SizedBox(height: 20,),
 
         Wrap(
           children: data2.map((ele){
