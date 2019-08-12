@@ -1,6 +1,5 @@
 
 import 'package:cloud_music/home_page.dart';
-import 'package:cloud_music/scroll_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

@@ -1,6 +1,3 @@
-import 'dart:async';
-import 'dart:math';
-
 import 'package:cloud_music/home_page.dart';
 import 'package:cloud_music/main_page.dart';
 import 'package:flutter/material.dart';
